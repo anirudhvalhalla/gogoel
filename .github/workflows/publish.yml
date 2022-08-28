@@ -5,6 +5,10 @@ on:
     branches: [master]
   pull_request:
 
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   build-and-push-docker-image:
     name: Build Docker image and push to repositories
